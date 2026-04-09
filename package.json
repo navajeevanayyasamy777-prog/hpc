@@ -1,0 +1,14 @@
+{
+  "name": "hpc-cloud-burst-simulator",
+  "version": "1.0.0",
+  "description": "Simulation of HPC cloud bursting",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd frontend && npm run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
